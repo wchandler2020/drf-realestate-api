@@ -23,7 +23,6 @@ DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = env('ALLOWED_HOSTS').split(' ')
 
-
 # Application definition
 
 DJANGO_APPS = [
@@ -53,10 +52,6 @@ LOCAL_APPS = [
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 SITE_ID = 1
-
-
-
-
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -181,4 +176,9 @@ logging.config.dictConfig(
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
+AUTH_USER_MODEL = 'users.User'
+
+
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+

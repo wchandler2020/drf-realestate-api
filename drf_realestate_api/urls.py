@@ -7,4 +7,10 @@ urlpatterns = [
     path("admin/", admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
+admin.site.site_header = 'DRF Realestate API'
+admin.site.site_title = 'DRF Realestate Admin Portal'
+admin.site.index_title = 'Welcome to the Realestate App Portal'
+
+
+
 
