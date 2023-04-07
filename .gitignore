@@ -10,6 +10,8 @@ __pycache__/
 staticfiles
 mediafiles
 
+drf_realestate_api.log
+
 # C extensions
 *.so
 

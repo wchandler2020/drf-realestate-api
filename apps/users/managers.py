@@ -34,7 +34,7 @@ class CustomerUserManager(BaseUserManager):
         user.set_password(password)
         extra_fields.setdefault('is_staff', False)
         extra_fields.setdefault('is_superuser', False)
-        user.save(usin =self._db)
+        user.save(using=self._db)
         return user
 
     def  create_superuser(self, username, first_name, last_name, email, password, **extra_fields):
